@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Summary</title>
+
+  <!-- Raw CSS -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+      background: #f5f5f5;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .order-items {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .order-items th, .order-items td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .order-items th {
+      background: #eee;
+    }
+
+    .total-box {
+      margin-top: 20px;
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 20px;
+      background: #2f7afe;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background: #1f5bca;
+    }
+
+    nav {
+      background: #222;
+      padding: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Your Order Summary</h1>
+    <p>Review your order before making payment.</p>
+
+    <table class="order-items">
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+
+      <tr>
+        <td>Smart Watch Series 5</td>
+        <td>1</td>
+        <td>$120</td>
+      </tr>
+
+      <tr>
+        <td>Wireless Earbuds</td>
+        <td>2</td>
+        <td>$60</td>
+      </tr>
+
+      <tr>
+        <td>Gaming Mouse</td>
+        <td>1</td>
+        <td>$35</td>
+      </tr>
+    </table>
+
+    <div class="total-box">
+      <strong>Total Amount:</strong> $275
+    </div>
+
+    <a class="btn" href="payment.html">Proceed to Payment</a>
+  </div>
+
+</body>
+</html>
